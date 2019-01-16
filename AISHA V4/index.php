@@ -1,1 +1,0 @@
-<?php header('AISHA/index.html') ; ?>
