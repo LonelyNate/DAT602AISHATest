@@ -4,7 +4,6 @@ var express = require('express');
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT;
-var server = app.listen(port);
 
 var app = express();
 
@@ -18,7 +17,7 @@ console.log("my socket server is running");
 
 var socket = require('socket.io');
 
-var io = socket(server);
+var io = socket(port);
 
 io.sockets.on('connection' , newConnection);
 
