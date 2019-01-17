@@ -73,7 +73,7 @@ LOGOimg.hide();
 
 
 function setup() {
- // socket = io.connect('https://http://localhost:5000');
+  socket = io.connect('https://secure-cliffs-83605.herokuapp.com/');
     var displayWidth = 800;
     var displayHeight = 400;
   button_choose = createButton('choose');
@@ -266,7 +266,7 @@ function confirm5(){
       icon7 : b7,
       icon8 : b8
     }
-      socket.emit('people', data);
+      
   }
 
 function startScreen() {
