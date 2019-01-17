@@ -73,7 +73,7 @@ LOGOimg.hide();
 
 
 function setup() {
-  socket = io.connect('https://secure-cliffs-83605.herokuapp.com');
+  socket = io.connect('https://http://localhost:5000');
     var displayWidth = 800;
     var displayHeight = 400;
   button_choose = createButton('choose');
@@ -165,7 +165,7 @@ function ChoosePage(){
     personpage = true;
   	button_choose.hide();
   	button_Locate.hide();
-
+   console.log(data);
   }
 function locatePage(){
 
@@ -235,7 +235,7 @@ function confirm3(){
       icon7 : b7,
       icon8 : b8
     }
-    console.log(data);
+ 
   }
 function confirm4(){
   	b7 = 1;
@@ -266,7 +266,7 @@ function confirm5(){
       icon7 : b7,
       icon8 : b8
     }
-      socket.emit('people', data)
+      socket.emit('people', data);
   }
 
 function startScreen() {
