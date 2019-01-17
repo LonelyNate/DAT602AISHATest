@@ -7,18 +7,7 @@ var port = process.env.PORT;
 
 var app = express();
 
-app.listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
-});
-
 app.use(express.static('Public'));
-
-
-app.get('/', function(req, res) {
-
-    
-    res.render('index');
-});
 
 console.log("my socket server is running");
 
