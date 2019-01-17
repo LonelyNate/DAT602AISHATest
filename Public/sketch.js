@@ -73,7 +73,7 @@ LOGOimg.hide();
 
 
 function setup() {
-  socket = io.connect('https://http://localhost:5000');
+ // socket = io.connect('https://http://localhost:5000');
     var displayWidth = 800;
     var displayHeight = 400;
   button_choose = createButton('choose');
