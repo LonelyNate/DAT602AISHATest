@@ -8,8 +8,9 @@
     "start": "node server.js"
   },
   "keywords": [
-    "p5js",
-    "nodejs"
+    "p5.js",
+    "node.js",
+    "socket.io"
   ],
   "author": "Nathan Johns",
   "license": "ISC",
