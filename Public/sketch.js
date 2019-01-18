@@ -16,6 +16,8 @@ var y = 100
 var icon = [];// stores the icons to be loaded.
 var LOGOimg; // stores the logo image file.
 
+var socket;
+
 var i1x;
 var i1y;
 
@@ -71,6 +73,7 @@ LOGOimg.hide();
 
 
 function setup() {
+ // socket = io.connect('https://http://localhost:5000');
     var displayWidth = 800;
     var displayHeight = 400;
   button_choose = createButton('choose');
@@ -162,7 +165,7 @@ function ChoosePage(){
     personpage = true;
   	button_choose.hide();
   	button_Locate.hide();
-  
+   console.log(data);
   }
 function locatePage(){
 
@@ -192,27 +195,78 @@ function confirm1(){
   	b4 = 1;
     chooseScreen = true;
   	placepage = false;
-   
+    var data = {
+      icon1 : b1,
+      icon2 : b2,
+      icon3 : b3,
+      icon4 : b4,
+      icon5 : b5,
+      icon6 : b6,
+      icon7 : b7,
+      icon8 : b8
+    }
   }
 function confirm2(){
   	b5 = 1;
     chooseScreen = true;
-  	placepage = false;    
+  	placepage = false;
+    var data = {
+      icon1 : b1,
+      icon2 : b2,
+      icon3 : b3,
+      icon4 : b4,
+      icon5 : b5,
+      icon6 : b6,
+      icon7 : b7,
+      icon8 : b8
+    }
   }
 function confirm3(){
   	b6 = 1;
     chooseScreen = true;
-  	placepage = false; 
+  	placepage = false;
+    var data = {
+      icon1 : b1,
+      icon2 : b2,
+      icon3 : b3,
+      icon4 : b4,
+      icon5 : b5,
+      icon6 : b6,
+      icon7 : b7,
+      icon8 : b8
+    }
+ 
   }
 function confirm4(){
   	b7 = 1;
     chooseScreen = true;
   	placepage = false;
+    var data = {
+      icon1 : b1,
+      icon2 : b2,
+      icon3 : b3,
+      icon4 : b4,
+      icon5 : b5,
+      icon6 : b6,
+      icon7 : b7,
+      icon8 : b8
+    }
   }
 function confirm5(){
   	b8 = 1;
     chooseScreen = true;
-  	placepage = false;      
+  	placepage = false;
+    var data = {
+      icon1 : b1,
+      icon2 : b2,
+      icon3 : b3,
+      icon4 : b4,
+      icon5 : b5,
+      icon6 : b6,
+      icon7 : b7,
+      icon8 : b8
+    }
+      //socket.emit('people', data);
   }
 
 function startScreen() {
