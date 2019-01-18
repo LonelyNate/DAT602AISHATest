@@ -4,7 +4,7 @@
   "description": "aisha test",
   "main": "index.html",
   "scripts": {
-    "test": "node sketch.js",
+    "test": "node server.js",
     "start": "node server.js"
   },
   "keywords": [
