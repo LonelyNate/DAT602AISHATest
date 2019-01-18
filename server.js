@@ -11,6 +11,8 @@ console.log("my socket server is running");
 
 var socket = require ('socket.io');
 
+var io = socket(server);
+
 io.sockets.on('connection' , newConnection);
 
 function newConnection(socket)
